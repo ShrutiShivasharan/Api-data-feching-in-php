@@ -1,0 +1,18 @@
+
+-------------------------------cURL------------------------
+
+cURL (Client URL Library) is used to make HTTP requests to retrieve data from a remote server. Here's a breakdown of the main parts related to cURL:
+
+curl_init(): Initializes a new cURL session.
+
+curl_setopt(): Sets an option for a cURL transfer. In this code, it's used to set options such as the URL to fetch and to indicate that the result should be returned as a string instead of being output directly.
+
+curl_exec(): Executes the cURL session and returns the result. In this case, it retrieves the JSON response from the specified URL.
+
+curl_close(): Closes the cURL session to free up resources.
+
+Here's a brief explanation of the options set using curl_setopt():
+
+CURLOPT_URL: Specifies the URL to fetch.
+CURLOPT_RETURNTRANSFER: If set to true, it returns the transfer as a string instead of outputting it directly.
+These functions and options are used to fetch data from the remote server in the fetchdata.php file. Once the data is fetched, it is processed (JSON decoded) and then displayed in the HTML page.
